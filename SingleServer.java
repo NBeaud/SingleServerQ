@@ -2,6 +2,7 @@
 * Simulate a single server queue with:
 *  - a normally distributed inter-arrival time with mean 30 and SD of 5
 *  - a normally distributed service time with mean 24 and SD of 4
+*  - run for first 15 customers
 */
 
 import java.util.*; 
