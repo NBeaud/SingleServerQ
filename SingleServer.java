@@ -41,7 +41,7 @@ public class SingleServer {
 
     public static void arrive(){
         count++;                                        //increment client count
-        Q.add(new Client(count,0,0));             //add new client object to Q
+        Q.add(new Client(count,0,0));                   //add new client object to Q
         nextServ-=nextArriv;                            //time spent towards next task
         for(Client c:Q){ c.waitTime += nextArriv;}      //update waitTime of Qers
         nextArriv = arrivTime.nextGaussian()*5+30;      //get new arrival time step from distribution
